@@ -13,3 +13,18 @@ def item_view(request,item_id):
     }
 
     return render(request,'index.html',context=context_data)
+
+def homepage_view(request):
+    return HttpResponse("My Homepage")
+
+def category_view(request):
+    return HttpResponse("My Category")
+
+def product_view(request):
+    return HttpResponse("My Product")
+
+def checkout_view(request):
+    return HttpResponse("My Checkout")
+
+def contact_page(request):
+    return HttpResponse("My Contact")
