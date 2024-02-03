@@ -15,7 +15,7 @@ def item_view(request,item_id):
     return render(request,'index.html',context=context_data)
 
 def homepage_view(request):
-    return HttpResponse("My Homepage")
+    return render(request,'home.html')
 
 def category_view(request):
     return HttpResponse("My Category")
